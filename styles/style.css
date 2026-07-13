@@ -4,7 +4,7 @@
   padding: 0;
   font-family: "Inter", sans-serif;
 }
-img{
+img {
   max-width: 100%;
   height: auto;
 }
@@ -13,28 +13,54 @@ img{
   max-width: 1200px;
   margin: auto;
 }
-.common-btn{
-  background-color: #1D4ED8;
-  color: #FFFFFF;
+.common-btn {
+  background-color: #1d4ed8;
+  color: #ffffff;
   border-radius: 5px;
   padding: 12px 40px;
-                    
-
+  border: none;
+  cursor: pointer;
 }
 /* navbar styles */
-.nav-parent{
+.nav-parent {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
 }
-.nav-li-parent{
+.nav-li-parent {
   display: flex;
   justify-content: space-between;
   gap: 24px;
   list-style: none;
 }
-.nav-li-parent li{
-  color:#575757 ;
-
+.nav-li-parent li {
+  color: #575757;
+}
+/* hero styles */
+.banner {
+  text-align: center;
+  background-image:
+  linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.5) 40%,
+    rgba(0, 0, 0, 0.1) 100%
+  ),
+  url("./../assets/banner.jpg");
+}
+.hero-parent h1 {
+  color: #ffffff;
+  font-size: 5rem;
+  font-style: italic;
+  padding-top: 130px;
+}
+.hero-parent p {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 250px;
+  padding: 0 250px;
+}
+.hero-parent button {
+  margin-bottom: 80px;
+  font-size: 1.5rem;
 }
