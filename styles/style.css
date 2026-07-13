@@ -4,4 +4,37 @@
   padding: 0;
   font-family: "Inter", sans-serif;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
 /* common stles */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.common-btn{
+  background-color: #1D4ED8;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 12px 40px;
+                    
+
+}
+/* navbar styles */
+.nav-parent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+}
+.nav-li-parent{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  list-style: none;
+}
+.nav-li-parent li{
+  color:#575757 ;
+
+}
