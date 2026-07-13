@@ -180,3 +180,175 @@ img {
 #pro-card li {
   color: #ffffff;
 }
+
+/* AI section styles */
+/* ===========================
+   Innovation Section
+=========================== */
+
+.innovation {
+  padding: 100px 0;
+  background: #08111f;
+}
+
+/* Heading */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.subtitle {
+  color: #7c5cff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.section-heading h2 {
+  color: #fff;
+  font-size: 3rem;
+  margin: 15px 0;
+}
+
+.section-heading p {
+  color: #b9c3d4;
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* ===========================
+   Grid
+=========================== */
+
+.innovation-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px;
+
+  grid-template-areas:
+    "card1 card2 card3"
+    "card4 card2 card6"
+    "card4 card5 card6";
+
+  gap: 25px;
+}
+
+.card1 {
+  grid-area: card1;
+}
+
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  grid-area: card3;
+}
+
+.card4 {
+  grid-area: card4;
+}
+
+.card5 {
+  grid-area: card5;
+}
+
+.card6 {
+  grid-area: card6;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.innovation-card {
+  background: #101d31;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 18px;
+
+  padding: 30px;
+
+  transition: 0.35s;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.innovation-card::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(135deg, rgba(124, 92, 255, 0.18), transparent);
+
+  opacity: 0;
+
+  transition: 0.35s;
+}
+
+.innovation-card:hover::before {
+  opacity: 1;
+}
+
+.innovation-card:hover {
+  transform: translateY(-10px);
+
+  border-color: #7c5cff;
+
+  box-shadow: 0 18px 40px rgba(124, 92, 255, 0.25);
+}
+
+.icon {
+  width: 70px;
+
+  height: 70px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 2rem;
+
+  background: linear-gradient(135deg, #c35cff, #3f7cff);
+
+  margin-bottom: 25px;
+}
+
+.innovation-card h3 {
+  color: #fff;
+
+  margin-bottom: 15px;
+
+  font-size: 1.5rem;
+}
+
+.innovation-card p {
+  color: #b9c3d4;
+
+  line-height: 1.7;
+
+  margin-bottom: 25px;
+}
+
+.innovation-card a {
+  color: #7c5cff;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
