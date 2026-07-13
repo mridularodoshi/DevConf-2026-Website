@@ -26,6 +26,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 }
 .nav-li-parent {
   display: flex;
@@ -40,27 +41,71 @@ img {
 .banner {
   text-align: center;
   background-image:
-  linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.5) 40%,
-    rgba(0, 0, 0, 0.1) 100%
-  ),
-  url("./../assets/banner.jpg");
+    linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.5) 40%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url("./../assets/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero-parent h1 {
   color: #ffffff;
   font-size: 5rem;
-  font-style: italic;
   padding-top: 130px;
 }
 .hero-parent p {
   color: #ffffff;
   font-size: 1.4rem;
   margin-bottom: 250px;
-  padding: 0 250px;
+  padding: 16px 200px;
 }
 .hero-parent button {
   margin-bottom: 80px;
   font-size: 1.5rem;
+}
+/* speakers styles */
+.speakers-parent h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 80px;
+}
+.speakers-cards-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 50px 0 170px 0;
+}
+
+.speaker-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.speaker-card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+.speaker-card h4 {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 5px 20px;
+  margin-top: 20px;
+}
+.speaker-card h3 {
+  color: #0d1b2a;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 5px 20px;
+}
+.speaker-card p {
+  color: #575757;
+  font-size: 0.9rem;
+  padding: 5px 20px;
+  margin-bottom: 20px;
 }
