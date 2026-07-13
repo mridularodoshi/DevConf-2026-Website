@@ -352,3 +352,24 @@ img {
 
   transition: 0.3s;
 }
+
+/* footer styles */
+footer{
+  background-color:#0D1B2A ;
+  color:#FFFFFF;
+  padding: 50px 0;
+}
+.footer-parent{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+.foot-li-parent{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+
+
+}
