@@ -16,9 +16,17 @@ img {
 .common-btn {
   background-color: #1d4ed8;
   color: #ffffff;
-  border-radius: 5px;
+  font-weight: 600;
+  border-radius: 8px;
   padding: 12px 40px;
   border: none;
+  cursor: pointer;
+}
+.outline-btn {
+  background-color: transparent;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 40px;
   cursor: pointer;
 }
 /* navbar styles */
@@ -108,4 +116,67 @@ img {
   font-size: 0.9rem;
   padding: 5px 20px;
   margin-bottom: 20px;
+}
+/* secure spot styles */
+.secure-parent h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.secure-parent > p {
+  text-align: center;
+  color: #575757;
+  padding: 12px;
+}
+.secure-card {
+  border: 2px solid #e5e7eb;
+  padding: 30px;
+  border-radius: 12px;
+}
+.secure-card h4 {
+  font-size: 0.8rem;
+  color: #888888;
+  font-weight: 600;
+  margin: 5px 0;
+}
+.secure-card h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+.secure-card p {
+  font-size: 0.8rem;
+  color: #888888;
+  margin: 3% 0;
+}
+.secure-card hr {
+  color: #e5e7eb;
+  margin: 20px 0;
+}
+.secure-card ul {
+  padding: 10px;
+}
+.secure-card ul li {
+  padding: 5px;
+  color: #333333;
+  font-size: 0.8rem;
+}
+.secure-card ul li::marker {
+  color: #2563eb;
+}
+.secure-card button {
+  text-align: center;
+  width: 100%;
+}
+.secure-cards-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 48px 80px;
+}
+#pro-card {
+  background-color: #0d1b2a;
+  color: #ffffff;
+}
+#pro-card li {
+  color: #ffffff;
 }
